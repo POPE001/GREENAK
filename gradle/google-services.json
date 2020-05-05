@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "72764233425",
+    "firebase_url": "https://greenak-97af2.firebaseio.com",
+    "project_id": "greenak-97af2",
+    "storage_bucket": "greenak-97af2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72764233425:android:b82e973db4603f28f617f0",
+        "android_client_info": {
+          "package_name": "com.example.greenak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "72764233425-8ku4uq5chi88j4ubk31588h7mglvejrf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv_Wq5BvvST-vOXPcK2Q4KYouNDBGBI8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "72764233425-8ku4uq5chi88j4ubk31588h7mglvejrf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

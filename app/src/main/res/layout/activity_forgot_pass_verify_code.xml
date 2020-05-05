@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center"
+    android:background="@color/colorPrimary"
+    tools:context=".ForgotPassVerifyCodeActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/black"
+        android:background="?attr/colorPrimary"
+        tools:ignore="MissingConstraints">
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:layout_width="@dimen/logo_w_h"
+        android:layout_height="@dimen/logo_w_h"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/verify_password" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="@string/otp_title"
+        android:textStyle="bold"
+        android:fontFamily="@font/sourcesanspro_semibold"
+        android:textSize="@dimen/subtitle"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="70dp"
+        tools:layout_editor_absoluteY="24dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/sent_to_91_xxxx_xxx"
+        android:fontFamily="@font/regularworksans"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="15dp">
+
+            <EditText
+                android:id="@+id/otp_edit_text1"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@drawable/otp_edittext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/trueBlack" />
+
+            <EditText
+                android:id="@+id/otp_edit_text2"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@drawable/otp_edittext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/trueBlack" />
+
+            <EditText
+                android:id="@+id/otp_edit_text3"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@drawable/otp_edittext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/trueBlack" />
+
+            <EditText
+                android:id="@+id/otp_edit_text4"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@drawable/otp_edittext"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/trueBlack" />
+
+            <EditText
+                android:id="@+id/otp_edit_text5"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:layout_marginEnd="@dimen/margin_right_otp"
+                android:background="@drawable/otp_edittext"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/trueBlack" />
+
+            <EditText
+                android:id="@+id/otp_edit_text6"
+                android:layout_width="@dimen/et_otp_width"
+                android:layout_height="@dimen/et_otp_height"
+                android:background="@drawable/otp_edittext"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textAlignment="center"
+                android:textColor="@color/trueBlack" />
+        </LinearLayout>
+
+
+
+
+
+        <Button
+            android:id="@+id/btn_verify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_button"
+            android:gravity="center"
+            android:layout_marginTop="150dp"
+            android:text="@string/otp_button_text"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+<LinearLayout
+android:id="@+id/linearLayout4"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:layout_gravity="end"
+android:orientation="horizontal"
+android:layout_marginTop="10dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/btn_verify">
+
+<TextView
+    android:id="@+id/tv_didnt"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/resend_msg"
+    android:textColor="@color/trueBlack"
+    android:textSize="15sp" />
+
+<TextView
+    android:id="@+id/tv_resend"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/sourcesanspro_semibold"
+    android:paddingStart="5dp"
+    android:paddingEnd="5dp"
+    android:text="@string/resend_again_msg"
+    android:textColor="@color/bg_main"
+    android:textSize="15sp"
+    android:textStyle="bold" />
+
+<TextView
+    android:id="@+id/tv_timer"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:visibility="gone" />
+</LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

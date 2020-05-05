@@ -1,0 +1,2 @@
+rootProject.name='GREENAK'
+include ':app'
