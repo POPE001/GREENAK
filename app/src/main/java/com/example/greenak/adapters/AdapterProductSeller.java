@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.greenak.FilterProduct;
+import com.example.greenak.FilterProductUser;
 import com.example.greenak.R;
 import com.example.greenak.activities.EditProductActivity;
 import com.example.greenak.models.ModelProduct;
@@ -94,6 +95,8 @@ public class AdapterProductSeller extends RecyclerView.Adapter<AdapterProductSel
                 //product is not on discount
                 holder.discountedPriceTv.setVisibility(View.GONE);
                 holder.discountedNoteTv.setVisibility(View.GONE);
+                holder.originalPriceTv.setPaintFlags(0);
+
 
             }
 

@@ -1,6 +1,7 @@
 package com.example.greenak.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.greenak.R;
+import com.example.greenak.activities.ShopDetailsActivity;
 import com.example.greenak.models.ModelShop;
 import com.squareup.picasso.Picasso;
 
@@ -52,7 +54,7 @@ public class AdapterShop extends RecyclerView.Adapter<AdapterShop.HolderShop>
         String online = modelShop.getOnline();
         String name = modelShop.getName();
         String phone = modelShop.getPhone();
-        String uid = modelShop.getUid();
+        final  String uid = modelShop.getUid();
         String timestamp = modelShop.getTimestamp();
         String shopOpen = modelShop.getShopOpen();
         String state = modelShop.getState();
@@ -94,6 +96,21 @@ public class AdapterShop extends RecyclerView.Adapter<AdapterShop.HolderShop>
         {
             holder.shopIv.setImageResource(R.drawable.ic_store_grey);
         }
+
+        //handle click listener,show shop details
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent(context, ShopDetailsActivity.class);
+                intent.putExtra("shopUid", uid);
+                context.startActivity(intent);
+            }
+        });
+
+
+        
     }
 
     @Override
