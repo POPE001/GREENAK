@@ -49,6 +49,7 @@
     <color name="primaryTextColor">#11CFC5</color>
     <color name="colorGreen">#7cb342</color>
     <color name="colorRed">#f4511e</color>
+    <color name="colorGray00">#f5f0f0</color>
 
 
     <!--colors for crop activity-->
